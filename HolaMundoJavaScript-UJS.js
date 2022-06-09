@@ -1,6 +1,7 @@
 /*
-comentario largo
+esto es un comentario largo
 */
+
 //tipos de datos 
 //las variables son dinamicas (por accion basada en el estado)
 var hw = "Hola Mundo desde JavaScript";
@@ -54,6 +55,7 @@ console.log(typeof y);
 var autos = ['bmw','vw'];
 console.log(typeof autos);
 
+//caracter vacio es una string
 var z = '';
 console.log(typeof z);
 
