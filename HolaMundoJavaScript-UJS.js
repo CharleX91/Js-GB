@@ -1,12 +1,16 @@
-//tipo de dato String
 /*
 comentario largo
 */
 //tipos de datos 
 //las variables son dinamicas (por accion basada en el estado)
+var hw = "Hola Mundo desde JavaScript";
+console.log(hw);
+
+//tipo de dato String
 var nombre = "carlos";
 console.log(nombre);
 
+//tipo de dato int, typeof sirve para mostrar el tipo de dato
 var num = 1234;
 console.log(typeof num);
 
@@ -58,3 +62,44 @@ var nombre = "juan";
 var apellido = "perez";
 var nombCompleto = nombre + ' ' + apellido;
 console.log(nombCompleto)
+
+
+/*
+buenas practicas:
+en vez de usar var vamos a usar let para definir una variable
+o tambien const en caso de constantes
+que podran ser modificadas a futuro.
+*/
+
+let name;
+name = "Pato asado";
+console.log(name);
+
+const lastName = "Noli";
+//lastName = "pepo" error no se puede modificar una constante
+console.log(lastName);
+
+//las variables con nombres de dos o mas palabras se escriben en camel
+
+let newVarLong = "Muy muy lejano";
+console.log(newVarLong);
+
+// se puede definir variables del mismo tipo en la misma linea
+/*
+let x, y;
+x = 20, y = 40;
+let z = x + y;
+console.log(z);
+*/
+
+//Js es sensible a mayus y minus
+let nombreCompleto = "pepe juan";
+let nombrecompleto = "maria laura";
+
+console.log(nombreCompleto);
+console.log(nombrecompleto);
+
+/*no esta permitido iniciar nombres de variablers con numeros 
+o palabras reservadas pero si con _ o $
+*/
+
