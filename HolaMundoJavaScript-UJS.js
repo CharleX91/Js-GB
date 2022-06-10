@@ -45,7 +45,7 @@ class Persona{
 var x;
 console.log(typeof x);
 x = undefined;
-console.log(x)
+console.log(x);
 
 //variable null
 var y = null;
@@ -87,13 +87,10 @@ let newVarLong = "Muy muy lejano";
 console.log(newVarLong);
 
 // se puede definir variables del mismo tipo en la misma linea
-/*
-let x, y;
-x = 20, y = 40;
-let z = x + y;
-console.log(z);
-*/
-
+let u, r, s;
+u = 20, r = 40;
+s = r - u;
+console.log(s);
 //Js es sensible a mayus y minus
 let nombreCompleto = "pepe juan";
 let nombrecompleto = "maria laura";
