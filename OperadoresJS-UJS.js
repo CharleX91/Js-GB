@@ -57,4 +57,42 @@
 console.log(w);
  a -= 2; // a = a - 2
  console.log(w);
- // *=  /= %= 
+/*
+    *= producto
+    /= division
+    %= operador de modulo
+    **= operaoro de exponente
+*/
+
+// operadores e comparación
+let e =3, o =2;
+let k = "3";
+
+let f = e == o; // revisa equivalencte sin importar el tipo
+                
+let g = e === k; //revisa los valores pero tambien el tipo
+
+//  (!=)distinto de !== distinto de de pero tambien analiza  los tipos de variable
+
+/*  operadores relacionales > < >= <=
+    operador AND && espera que todas las condiciones sean verdaderas
+    operador OR || espero que alguna de las condiciones sea verdadera
+*/
+
+// operador ternario:   conicion? true: false
+let result = (1>2) ? "verdadero" : "falso";
+console.log(result);
+
+let numerito = 9;
+paroimpar = ( numerito % 2 == 0) ? "Numero par" : "Numero impar";
+console.log(paroimpar);
+
+
+//convertir de cadena de caracteres a numero
+let miNum = "17";
+
+let edad = Number(miNum);
+let votar = ( edad >= 18 ) ? "Puede votar" : "Es menor de edad";
+
+
+
