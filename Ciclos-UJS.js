@@ -8,7 +8,7 @@ console.log(contador);
 contador++;
 }
 
-/*estructura bucle do while  
+/*estructura bucle DO WHILE 
 (el bucle do while siempre se va a ejecutar por lo menos una vez
 ya que la condicion se revisa al final)
 */
@@ -21,10 +21,26 @@ do{
 }while (cont<3);
 console.log("Fin bucle do while")
 
-//estructura bucle FOR
-/*
+
+ // estructura FOR  
+
 for(let conta = 0; conta < 3; conta++){
 console.log(conta);    
 }
-co
-*/
+console.log("Fin de ciclo for");
+
+// ejercicio practico aplicando break para cortar el bucle
+
+for ( let i = 0; i <= 10; i++){
+    if( i % 2 == 0){
+        console.log(i);
+        break;
+    }
+}
+
+for ( let j = 0; j <= 10; j++){
+    if (j % 2 !== 0){
+        continue;
+    }
+    console.log(j);
+}
