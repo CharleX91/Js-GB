@@ -52,7 +52,6 @@
 
    /*
    es importante recordar usar la palabra reservada break 
-   despues de la sentencia de cada caso para romper el bucle;
+   despues de la sentencia de cada caso para detener la ejecucion;
    el bucle switch utiliza comparacion estrica!!
    */
-  
