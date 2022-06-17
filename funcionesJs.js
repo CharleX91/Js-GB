@@ -2,3 +2,5 @@
 
 const ejemplo = 2;
 console.log(ejemplo);
+
+// este es un ejemplo
