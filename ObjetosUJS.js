@@ -72,5 +72,56 @@ let person3 = {
     }*/
     
 }
-
 console.log(person3.lang);
+
+//Funcion constructor de onjeto tipo persona
+function Person4(nombre,apellido,email){
+    this.nombre=nombre;
+    this.apellido=apellido;
+    this.email=email;
+    this.nombreCompleto = function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let padre = new Person4('Juan', 'Perez', 'juanP@gmail.com');
+console.log("🚀 ~ file: ObjetosUJS.js ~ line 88 ~ padre", padre);
+
+let madre = new Person4('Ana','Juarez','anaJ@gmail.com');
+console.log(madre.nombreCompleto());
+
+//inicializacion e objeto formal
+let myObject = Object();
+//inicializacion e objeto conveniente
+let myObject2 = {};
+
+//otra posible incializacion para un objeto de tipo string formal
+let myString = new String('hola');
+//opcion resumida
+let myString2 = 'Hello';
+//llas inicializacions formales y las resumidas existen de igualmente para todos los tipos de variables y funciones.
+
+//agregar una nmueva propiedad que afecte a todos los objetos del mismo tipo
+//sin necesidad de modificar el constructor
+//para ello utilizamos Prototype
+Person4.prototype.nacionaliad = 'ARG';
+console.log(padre.nacionaliad);
+
+//Uso de método call para accder a un metodo establecido en el constructro de otro objeto
+//tambien es posible pasar parametros como por ejemplo titulo y tel 
+let persona1 = {
+    nombre: 'Carlos',
+    apellido: 'Carmo',
+    nombreCompleto: function(titulo, tel){
+        return titulo + ' ' + this.nombre +' '+ this.apellido + ' ' + tel;
+    }
+ }
+  let persona2 = {
+     nombre: 'Mario',
+     apellido: 'Cars'
+  }
+  
+  console.log(persona1.nombreCompleto);
+  console.log(persona1.nombreCompleto.call(persona2,'Ing','3416235645'));
+
+
