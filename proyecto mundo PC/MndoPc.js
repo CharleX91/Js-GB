@@ -16,5 +16,22 @@ class InputModules{
     set brand(brand){
         this._brand = brand;
     }
-     
 }
+
+class Mouse extends InputModules{
+    static countMouses = 0;
+   
+    constructor(inputType, brand){
+        super(inputType, brand);
+        this._isMouse = ++Mouse.countMouses;
+    }
+    get idMouse(){
+        return this._idMouse;
+    }
+    toString(){
+        return `Mouse: [idMouse: ${this._isMouse}, inputType: ${this._inputType}, brand: ${this._brand}]`;
+    }
+}
+let raton1 = new Mouse('USB', 'HP');
+console.log(raton1);
+
