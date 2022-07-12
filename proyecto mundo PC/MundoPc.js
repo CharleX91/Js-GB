@@ -79,6 +79,31 @@ class Computer{
         return `Computer ${this._idComputer}: ${this._name} \n ${this._monitor} \n ${this._keyboard} \n ${this._mouse}`
     }
 }
+
+class Orer{
+    static counterOrder = 0;
+
+    constructor(){
+        this._idOrder = ++Order.counterOrder;
+        this._computers = [];
+    }
+    get idOrder(){
+        return this._idOrder;
+    }
+    addComputer(computer){
+        this._computers.push(computer);
+    }
+    showComputer(){
+        let computersOrder = '';
+        for ( let computer of this._computers){
+            computersOrder += `\n${computer}`;
+        }
+        console.log(`Order: ${this._idOrder}, Computers: ${computersOrder}`);
+    }
+
+}
+
+
 let raton1 = new Mouse('USB', 'HP');
 console.log(raton1.toString());
 let raton2 = new Mouse('Bluetooth', 'DELL');
@@ -97,3 +122,5 @@ let computadora1 = new Computer ( 'HP', monitor1, raton1, teclado1);
 console.log(computadora1.toString());
 let computadora2 = new Computer ('SAMPLE', monitor2, raton2, teclado2);
 console.log(`${computadora2}`)//imprimir con sintaxis template string llama automaticamente al método toString
+
+let orden1 = new Order();
