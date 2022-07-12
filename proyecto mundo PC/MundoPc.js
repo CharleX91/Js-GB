@@ -131,3 +131,9 @@ orden1.addComputer(computadora2);
 orden1.addComputer(computadora1);
 orden1.showComputer();
 
+let orden2 = new Order();
+orden1.addComputer(computadora1);
+orden1.addComputer(computadora2);
+orden1.addComputer(computadora1);
+orden1.showComputer();
+
