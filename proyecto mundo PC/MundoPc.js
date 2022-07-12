@@ -1,3 +1,5 @@
+"use strict"// modo strict especifica con no se admiten variables sin inicializar
+
 class InputModules{
     constructor(inputType, brand){
         this._inputType = inputType;
@@ -80,7 +82,7 @@ class Computer{
     }
 }
 
-class Orer{
+class Order{
     static counterOrder = 0;
 
     constructor(){
@@ -124,3 +126,8 @@ let computadora2 = new Computer ('SAMPLE', monitor2, raton2, teclado2);
 console.log(`${computadora2}`)//imprimir con sintaxis template string llama automaticamente al método toString
 
 let orden1 = new Order();
+orden1.addComputer(computadora1);
+orden1.addComputer(computadora2);
+orden1.addComputer(computadora1);
+orden1.showComputer();
+
